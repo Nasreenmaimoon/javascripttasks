@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="2">
+		<tr>
+			<td>corse name</td>
+			<td>course number</td>
+			<td>course fees</td>
+			<td>place</td>
+		</tr>
+		<tbody id="abc"></tbody>
+	</table>
+	<script type="text/javascript">
+		let courses=[
+	    { name:"html",
+		  coursenumber:234277,
+		  coursefees:237,
+		  place:'kkd'
+		},
+		{ name:"css",
+		  coursenumber:23423,
+		  coursefees:235,
+		  place:'amp'
+		},
+	    { name:"bootstrap",
+		  coursenumber:2342003,
+		  coursefees:239,
+		  place:'yyu'
+		}					  
+	   ];
+		for( i=0;i<courses.length;i++){
+			 let tr=document.createElement('tr');
+			 let tda=document.createElement('td');
+			 let tdb=document.createElement('td');
+			 let tdc=document.createElement('td');
+			 let tdd=document.createElement('td');
+			 tda.innerText=courses[i].name;
+			 tdb.innerHTML=courses[i].coursenumber;
+			 tdc.innerHTML=courses[i].coursefees;
+			 tdd.innerHTML=courses[i].place;
+			 tr.append(tda)
+			 tr.append(tdb)
+			 tr.append(tdc)
+			 tr.append(tdd)
+			 document.getElementById('abc').append(tr)
+
+		    }
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM methods</title>
+</head>
+<body>
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BOOTSTRAP</p>
+	<p class="topic">JS</p>
+<script type="text/javascript">
+	let paras = document.getElementsByClassName('topic');
+	console.log(paras);
+	paras[0].innerHTML = 'hyper text markup language';
+	paras[0].style.color = "red";
+</script>	
+
+</body>
+</html>
